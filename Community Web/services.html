@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Center</title>
+
+    <link rel="stylesheet" href="style.css">
+     <!-- Font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label class="logo">Community Website</label>
+    <ul>
+        <li> <a class="active" href="Home.html">Home</a></li>
+        <li> <a href="services.html">Services</a></li>
+        <li> <a href="events.html">Events</a></li>
+        <li> <a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+    <!-- Services -->
+<h1>Services</h1>
+<div id="Services">
+
+<div class="sewing">
+   <div class="des1">
+       <img src="Sewing2.webp" alt=""> 
+       <h3>Tailoring and Sewing</h3>
+       <p>Welcome to our 
+           training 
+           hub we specialize in <br>
+           crafting garments that 
+           perfectly fit <br> your style 
+           and body, combining 
+           traditional <br> skills and 
+           modern outfit</p>
+   </div>
+</div>
+
+<div class="ittraining">
+   <div class="des2">
+       <img src="It pics2.webp" alt="">
+       <h3>Computer and IT training</h3>
+       <p>Our programs are 
+           designed in favor <br> of 
+           individuals from all levels
+           from <br> beginner to 
+           advanced learners 
+           seeking for <br> specialized IT 
+           knowledge. <br> With hands
+            on guidance we help  
+           you <br> gain confidence
+           and stay competitive.
+           </p>
+   </div>
+</div>
+
+<div class="agriculture">
+   <div class="des3">
+   <img src="agrics3.webp" alt="">
+       <h3>Agricultural Training</h3>
+       <p>Our programs are 
+           tailored for everyone <br>
+           from beginners 
+           interested in gardening <br>
+           and crop production 
+           to experienced <br> farmers
+           looking to refine <br>
+           techniques and learn
+           the latest <br> in sustainable
+           agriculture</p>
+   </div>
+</div>
+</div>
+
+<script>
+    const des1 = document.querySelector(".des1");
+    des1.addEventListener("click", () => {
+        des1.style.backgroundColor = "blue";
+        des1.style.color = "lightblue";
+    })
+
+    const des2 = document.querySelector(".des2");
+    des2.addEventListener('click', function(){
+        if (this.style.width ==='100px'){
+            this.style.width = '200px';
+            this.style.height = '200px';
+            this.textContent = 'collapse Me!';
+        }else{
+            this.style.width = '100px';
+            this.style.height = '100px';
+            this.textcontent = 'Expand Me!';
+        }
+    });
+
+
+    const des3 = document.querySelector(".des3");
+    des3.addEventListener("click", () => {
+        des3.style.backgroundColor = "blue";
+        des3.style.color = "lightblue";
+    })
+</script>
+
+</body>
+</html>
+

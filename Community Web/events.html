@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Center</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Navigation bar -->
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label class="logo">Community Website</label>
+    <ul>
+        <li> <a class="active" href="Home.html">Home</a></li>
+        <li> <a href="services.html">Services</a></li>
+        <li> <a href="events.html">Events</a></li>
+        <li> <a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+   <!-- Working with events page -->
+  <h1>Upcoming Events</h1>
+  <div id="events">
+    <div class="event1">
+        <h3>Computer and IT upcoming events</h3>
+        <p>Introduction to basic computer skills <br>
+            Cyber Security for beginners <br>
+            Web development bootcamp <br>
+            Digital skills for entrepreneurs</p>
+<img src="Comp2.webp" alt="">
+    </div>
+    <div class="event2">
+        <h3>Agricultural Training Events</h3>
+        <p>Sustainable farming practices
+            workshop <br>
+            Home gardening basics
+            Modern crop management <br>
+            Organic farming for beginners</p>
+            <img src="agrics2.webp" alt="">
+    </div>
+
+    <div class="event3">
+        <h3>Sewing and Tailoring training events</h3>
+        <p> Sewing for beginners workshop <br>
+            Upcycling and customization workshop <br>
+            Sewing for business workshop</p>
+            <img src="sewing3.webp" alt="" id="myImage">
+    </div>
+
+    <!-- Form Registration -->
+     <form action="https://httpbin.org/post" method="post">
+    <div class="form">
+        <legend>Form Registration</legend>
+        <div>
+        <label for="First_name">First name:</label>
+        <input type="text" id="First_name" name="first name" placeholder="First_name">
+</div>
+    
+<div>
+    <label for="Last_name">Last name:</label>
+    <input type="text" id="Last_name" name="Last name" placeholder="Last_name">
+</div>
+     
+<div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="email">
+</div>
+
+<div>
+    <label for="phone number">Phone number:</label>
+    <input type="tel" id="phone number" name="phone number" placeholder="phone number">
+</div>
+    
+<div>
+    <label for="Residence">Residence:</label>
+    <input type="text" id="Residence" name="Residence" placeholder="Residence">
+</div>
+    
+<div>
+    <label for="course">Course:</label>
+    <input type="text" id="course" name="course" placeholder="course">
+</div>
+
+    <!-- Creating a submit button -->
+    <button type="submit" class="button1">Submit</button>
+    </div>
+</form>
+    </div> 
+
+    <script>
+
+const events = document.querySelector("#events");
+    events.addEventListener("click", () => {
+        events.style.backgroundColor = "blue";
+        events.style.color = "lightblue";
+    })
+  </script>
+</body>
+</html>
